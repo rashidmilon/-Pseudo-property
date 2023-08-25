@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+.container1 {
+  background-color: grey;
+  width: 600px;
+  margin: 20px auto;
+}
+/* 
+input:focus {
+  outline: none;
+  border: 3px solid red;
+}
+
+input:checked {
+  width: 25px;
+  height: 25px;
+}
+
+button:disabled {
+  padding: 20px;
+} */
+
+h1 {
+  text-align: center;
+  position: relative;
+}
+
+h1::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: aqua;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: aqua;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+}
+
+.para::first-letter {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  color: pink;
+}
+
+.para::first-line {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+  color: lawngreen;
+}
+
+.para::selection {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+  color: white;
+}
+
+li::marker {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+  color: blue;
+}
